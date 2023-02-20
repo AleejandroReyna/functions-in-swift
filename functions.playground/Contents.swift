@@ -23,3 +23,16 @@ func getGreeting(greeting: String, name: String) -> String {
 }
 
 print(getGreeting(greeting: "Hello", name: "Strange"))
+
+
+// Break function by conditionals and return
+
+func isAnAdult(age: Int) -> Bool {
+    if age < 18 {
+        return false
+    }
+    
+    return true
+}
+
+print(isAnAdult(age: 17))
