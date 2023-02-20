@@ -89,6 +89,7 @@ func square(n numberOfGetItsSquare : Int ) -> Int {
 
 print(square(n: 2))
 
+
 // not a tag for param
 
 func getCapitalizedName(_ name : NSString) -> String {
@@ -96,6 +97,7 @@ func getCapitalizedName(_ name : NSString) -> String {
 }
 
 print(getCapitalizedName("alEjaNdrO"))
+
 
 // function with default params
 
@@ -105,3 +107,16 @@ func checkMyProgress(_ progress : Int = 0) {
 
 checkMyProgress()
 checkMyProgress(10)
+
+
+// function with variadic params
+
+func getMean(_ numbers : Double...) -> Double {
+    var total : Double = 0
+    for n in numbers {
+        total += n
+    }
+    return total / Double(numbers.count)
+}
+
+print(getMean(1, 3, 5, 6, 70))
