@@ -77,3 +77,12 @@ func getMaxItem(array:[Int]) -> Int? {
 }
 
 print(getMaxItem(array: []))
+
+
+// params with aliases
+
+func square(n numberOfGetItsSquare : Int ) -> Int {
+    return numberOfGetItsSquare * numberOfGetItsSquare
+}
+
+print(square(n: 2))
