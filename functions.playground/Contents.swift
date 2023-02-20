@@ -36,3 +36,25 @@ func isAnAdult(age: Int) -> Bool {
 }
 
 print(isAnAdult(age: 17))
+
+// Use a tuple as a return value
+
+func getMinAndMax(array:[Int]) -> (min: Int, max: Int) {
+    var min : Int = array[0]
+    var max : Int = array[0]
+    
+    for value in array {
+        if value < min {
+            min = value
+        }
+        
+        if value > max {
+            max = value
+        }
+    }
+    
+    return (min, max)
+}
+
+print(getMinAndMax(array: [1, 20, 3, 45, 10]))
+
