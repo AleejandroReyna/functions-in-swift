@@ -1,3 +1,7 @@
-import Cocoa
+// Simple function
 
-var greeting = "Hello, playground"
+func greeting(name: String) -> String{
+    return "Hello \(name)!"
+}
+
+greeting(name: "World")
