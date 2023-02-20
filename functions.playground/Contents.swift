@@ -96,3 +96,12 @@ func getCapitalizedName(_ name : NSString) -> String {
 }
 
 print(getCapitalizedName("alEjaNdrO"))
+
+// function with default params
+
+func checkMyProgress(_ progress : Int = 0) {
+    print("Your progress is \(progress)%")
+}
+
+checkMyProgress()
+checkMyProgress(10)
