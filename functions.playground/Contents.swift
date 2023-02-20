@@ -120,3 +120,17 @@ func getMean(_ numbers : Double...) -> Double {
 }
 
 print(getMean(1, 3, 5, 6, 70))
+
+
+// Modify variables through functions
+
+func plusANumberToAnotherNumber(_ firstNumber : inout Int, _ secondNumber : Int) {
+    firstNumber = firstNumber + secondNumber
+}
+
+var numberToModify : Int = 5
+plusANumberToAnotherNumber(&numberToModify, numberToModify)
+print(numberToModify)
+
+
+
