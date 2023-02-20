@@ -1,5 +1,7 @@
 // Simple function
 
+import Foundation
+
 func greeting() {
     print("Hello World!")
 }
@@ -86,3 +88,11 @@ func square(n numberOfGetItsSquare : Int ) -> Int {
 }
 
 print(square(n: 2))
+
+// not a tag for param
+
+func getCapitalizedName(_ name : NSString) -> String {
+    return name.capitalized
+}
+
+print(getCapitalizedName("alEjaNdrO"))
