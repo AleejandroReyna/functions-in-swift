@@ -58,3 +58,22 @@ func getMinAndMax(array:[Int]) -> (min: Int, max: Int) {
 
 print(getMinAndMax(array: [1, 20, 3, 45, 10]))
 
+// Optional return
+
+func getMaxItem(array:[Int]) -> Int? {
+    if array.isEmpty {
+        return nil
+    }
+    
+    var max : Int = array[0]
+    
+    for value in array {
+        if(value > max) {
+            max = value
+        }
+    }
+    
+    return max
+}
+
+print(getMaxItem(array: []))
